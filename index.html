@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕CAFE ZEPAHUA</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc; /* Beige claro */
+            color: #4a2c2a; /* Café oscuro */
+        }
+        
+        header {
+            background-color: #6f4e37; /* Café medio */
+            color: #f5f5dc;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        nav {
+            background-color: #4a2c2a; /* Café oscuro */
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f5f5dc;
+            text-decoration: none;
+            padding: 0 1.5em;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #d2b48c; /* Beige */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2em 0;
+        }
+        
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+            background: #d2b48c; /* Beige */
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 1.5em;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+            color: #4a2c2a;
+        }
+
+        .menu-item p {
+            margin: 0.5e m 0 0;
+            color: #6f4e37;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            background: #d2b48c; /* Beige */
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.8 em;
+            margin-bottom: 1em;
+            border: 1px solid #4a2c2a;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background: #6f4e37;
+            color: #f5f5dc;
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        
+        .contact-form button:hover {
+            background: #4a2c2a;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #4a2c2a;
+            color: #f5f5dc;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CAFE ZEPAHUA</h1>
+        <p>El cafe ayuda a quien duerme poco y sueña mucho.</p>
+    </header>
+
+    <nav>
+        <a href="MENU.HTML">Menú</a>
+        <a href="POSTRES.HTML"> Postres</a>
+        
+    </nav>
+    
+    <div class="container">
+        <section >
+            <h2>Mas pedidos</h2>
+            <div class="menu-item">
+                
+                <div>
+                    <h3>Café Latte</h3>
+                    <p>Espresso con leche espumosa. La combinación perfecta de suavidad y sabor.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                
+                <div>
+                    <h3>Croissant de Mantequilla</h3>
+                    <p>Delicado y crujiente, perfecto para acompañar tu café matutino.</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                
+                <div>
+                    <h3>Chocolate Caliente</h3>
+                    <p>Cremoso y delicioso, con malvaviscos o crema batida. Un abrazo en una taza.</p>
+                </div>
+            </div>
+        </section>
+
+        ---
+
+        <section >
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery">
+                <img src="imagen fondo de cafeteria .jpg" alt="Interior de la cafetería">
+                <img src="imagen cafe y libro .jpg" alt="Mesa con café y libro">
+                <img src="imagen granos de cafe .jpg" alt="Granos de café">
+                <img src="imagen barista preparando cafe .jpg" alt="Barista preparando café">
+            </div>
+        </section>
+
+        ---
+
+        <section >
+            <h2>Contáctanos</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CAFE ZEPAHUA. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
